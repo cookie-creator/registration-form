@@ -3,9 +3,9 @@
 @section('content')
 
     <div class="row h-100">
-        <div class="col-4 h-100">
+        <div class="d-none d-sm-none d-md-block col-4 col-lg-4 col-md-4 h-100">
         </div>
-        <div class="col-8 bg-white h-100">
+        <div class="col-12 col-lg-8 col-md-8 col-sm-12 bg-white h-100">
             <div class="px-5 form-wrapper clearfix">
                 <div class="top-slogan pb-5">
                     <div class="">Hello there, lets try to register!</div>
@@ -45,14 +45,14 @@
                     <form id="registrationForm" class="needs-validation">
                         @csrf
                         <div class="row">
-                            <div class="col-6 mb-4">
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12 mb-4">
                                 <label for="firstname" class="col-6 col-form-label fs-5">First name</label>
                                 <input type="text" class="form-control" id="firstname" name="firstname">
                                 <div id="valid-firstname" class="validation-msg text-danger text-sm">
                                     First name must be longer
                                 </div>
                             </div>
-                            <div class="col-6 mb-4">
+                            <div class="col-12 col-lg-6 col-md-12 col-sm-12 mb-4">
                                 <label for="secondname" class="col-6 col-form-label fs-5">Second name</label>
                                 <input type="text" class="form-control" id="secondname" name="secondname">
                                 <div id="valid-secondname" class="validation-msg text-danger text-sm">
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 mb-4">
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4">
                                 <label for="email" class="form-label fs-5">Email address</label>
                                 <input type="email" class="form-control" id="email" placeholder="your@email.com">
                                 <div id="valid-email" class="validation-msg text-danger text-sm">
@@ -70,14 +70,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 mb-4">
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4">
                                 <label for="password" class="form-label fs-5">Password</label>
                                 <input type="password" class="form-control" id="password">
                                 <div id="valid-password" class="validation-msg text-danger text-sm">
                                     Password must be more than 8 symbols
                                 </div>
                             </div>
-                            <div class="col-6 mb-4">
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mb-4">
                                 <label for="password" class="form-label fs-5">Please confirm password</label>
                                 <input type="password" class="form-control" id="passconfirm">
                                 <div id="valid-passconfirm" class="validation-msg text-danger text-sm">

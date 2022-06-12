@@ -10272,12 +10272,10 @@ textarea.form-control-lg {
   }
 }
 html {
-  height: 100%;
   min-height: 100%;
 }
 
 body {
-  height: 100%;
   min-height: 100%;
   background-image: url("http://registration-form.dev.com/storage/bg.jpg");
   background-color: #232A42;
