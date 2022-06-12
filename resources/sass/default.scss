@@ -1,0 +1,38 @@
+html
+{
+    min-height: 100%;
+}
+body {
+    min-height: 100%;
+    background-image: url("http://registration-form.dev.com/storage/bg.jpg");
+    background-color: #232A42;
+    background-position-x: -1130px;
+    overflow-x: hidden;
+}
+.form-wrapper {
+
+    max-width: 640px;
+    padding-bottom: 100px;
+
+    header {
+        h1 {
+            span {
+                color: #0099ff;
+            }
+        }
+    }
+
+    .top-slogan {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        div {
+            padding-top: 2vh;
+            font-size: 1rem;
+            color: #212529;
+            text-align: right;
+        }
+    }
+
+}
