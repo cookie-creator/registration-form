@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Adapters\RegistrationAdapter;
+use Illuminate\Support\Facades\Hash;
 
 class RegistrationUsersService
 {
@@ -22,7 +23,7 @@ class RegistrationUsersService
 
         if ($users->where('email', $data['email'])->count() == 0)
         {
-            $this->adapter->logRegisteredUser($data);
+            $this->adapter->logRegisteredUser($this->hashPassword($data));
 
             return true;
         } else {
@@ -38,5 +39,12 @@ class RegistrationUsersService
             'email' => $request['email'],
             'password' => $request['password']
         ];
+    }
+
+    private function hashPassword($data)
+    {
+        $data['password'] = Hash::make($data['password']);
+
+        return $data;
     }
 }
