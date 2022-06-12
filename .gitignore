@@ -13,3 +13,6 @@ yarn-error.log
 /.idea
 /.vscode
 /.history
+
+/public/js/app.js
+/storage/app/upload/json/registered.json

@@ -18,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::get('/', [\App\Http\Controllers\RegistrationFormController::class, 'index']);
+Route::get('/makeuserfile', [\App\Http\Controllers\CreateUsersFileController::class, 'index']);
